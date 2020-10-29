@@ -34,13 +34,13 @@ public class Lab1 {
             x = Math.floor(Math.random() * 20);
             System.out.format("Random number: %.1f\n", x);
 
-            Thread t;
             if (x % 2 == 0) {
-                t = new Thread(new SquareEvenNumber(x));
+                Thread t = new Thread(new SquareEvenNumber(x));
+                t.start();
             } else {
-                t = new Thread(new CubeOddNumber(x));
+                Thread t = new Thread(new CubeOddNumber(x));
+                t.start();
             }
-            t.start();
         }
     }
 }
