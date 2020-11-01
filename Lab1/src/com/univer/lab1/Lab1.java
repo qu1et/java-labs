@@ -13,7 +13,7 @@ class SquareEvenNumber implements Runnable {
 }
 
 class CubeOddNumber implements Runnable {
-    double x;
+    double x;Ф
 
     CubeOddNumber(double x) {
         this.x = x;

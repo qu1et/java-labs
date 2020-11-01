@@ -25,8 +25,10 @@ public class SimpleGUI4 extends JFrame {
             StringBuilder msg = new StringBuilder("");
             msg.append(input.getText());
 
-            JOptionPane.showMessageDialog(null, msg, "Информация",
-                    JOptionPane.PLAIN_MESSAGE);
+            if (msg.length() != 0) {
+                JOptionPane.showMessageDialog(null, msg, "Информация",
+                        JOptionPane.PLAIN_MESSAGE);
+            }
         }
     }
 }
